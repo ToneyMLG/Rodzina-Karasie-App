@@ -1,0 +1,27 @@
+{
+  "name": "KnowledgeDocument",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Document title"
+    },
+    "content": {
+      "type": "string",
+      "description": "Full text content of the document"
+    },
+    "documentType": {
+      "type": "string",
+      "enum": [
+        "genealogy",
+        "family_history",
+        "other"
+      ],
+      "default": "genealogy"
+    }
+  },
+  "required": [
+    "title",
+    "content"
+  ]
+}

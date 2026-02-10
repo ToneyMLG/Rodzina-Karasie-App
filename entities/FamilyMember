@@ -1,0 +1,74 @@
+{
+  "name": "FamilyMember",
+  "type": "object",
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "description": "First name of the family member"
+    },
+    "surname": {
+      "type": "string",
+      "description": "Last name of the family member"
+    },
+    "dateOfBirth": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of birth"
+    },
+    "dateOfDeath": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of death (if applicable)"
+    },
+    "isAlive": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether the member is still alive"
+    },
+    "birthPlace": {
+      "type": "string",
+      "description": "Place of birth"
+    },
+    "tombstoneLocation": {
+      "type": "string",
+      "description": "Cemetery or tombstone location"
+    },
+    "tombstonePhoto": {
+      "type": "string",
+      "description": "URL of tombstone photo"
+    },
+    "profilePicture": {
+      "type": "string",
+      "description": "URL of profile picture"
+    },
+    "fatherId": {
+      "type": "string",
+      "description": "ID of father"
+    },
+    "motherId": {
+      "type": "string",
+      "description": "ID of mother"
+    },
+    "spouseId": {
+      "type": "string",
+      "description": "ID of spouse"
+    },
+    "positionX": {
+      "type": "number",
+      "description": "X position on tree canvas"
+    },
+    "positionY": {
+      "type": "number",
+      "description": "Y position on tree canvas"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional notes about the member"
+    }
+  },
+  "required": [
+    "firstName",
+    "surname",
+    "dateOfBirth"
+  ]
+}

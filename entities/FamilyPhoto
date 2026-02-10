@@ -1,0 +1,40 @@
+{
+  "name": "FamilyPhoto",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string",
+      "description": "URL of the photo"
+    },
+    "title": {
+      "type": "string",
+      "description": "Photo title or description"
+    },
+    "taggedMemberIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "IDs of family members tagged in this photo"
+    },
+    "customTags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Custom tags like 'Wedding', 'Birthday', etc."
+    },
+    "uploadDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Date photo was uploaded"
+    },
+    "memberId": {
+      "type": "string",
+      "description": "If this photo belongs to a specific member's gallery"
+    }
+  },
+  "required": [
+    "url"
+  ]
+}

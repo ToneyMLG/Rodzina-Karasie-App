@@ -1,0 +1,38 @@
+{
+  "name": "ShareLink",
+  "type": "object",
+  "properties": {
+    "token": {
+      "type": "string",
+      "description": "Unique share token"
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "viewer",
+        "editor"
+      ],
+      "default": "viewer",
+      "description": "Permission level for this share link"
+    },
+    "expiresAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When this share link expires"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether this link is still active"
+    },
+    "accessCount": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of times this link was accessed"
+    }
+  },
+  "required": [
+    "token",
+    "role"
+  ]
+}

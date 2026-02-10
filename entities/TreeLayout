@@ -1,0 +1,32 @@
+{
+  "name": "TreeLayout",
+  "type": "object",
+  "properties": {
+    "positions": {
+      "type": "object",
+      "description": "Member positions as JSON: {memberId: {x, y}}"
+    },
+    "customLines": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fromId": {
+            "type": "string"
+          },
+          "toId": {
+            "type": "string"
+          },
+          "color": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Custom connection lines between members"
+    }
+  },
+  "required": []
+}
